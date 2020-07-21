@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "baseName": {
-            "defaultValue": "MCSystemsCertify",
+            "defaultValue": "MCSystemsCertified",
             "type": "string",
             "metadata": {
                 "description": "Name use as base-template to named the resources to be deployed in Azure."
@@ -29,7 +29,7 @@
         },
         "GitHubURL": {
             "type": "string",
-            "defaultValue": "https://github.com/fboucher/AzUrlShortener.git",
+            "defaultValue": "https://github.com/nnation/AzUrlShortener.git",
             "metadata": {
                 "description": "The URL of GitHub (ending by .git)"
             }
