@@ -4,7 +4,7 @@
 
 To deploy YOUR version of **Azure Url Shortener Admin Blazor WebSite** to Azure, you just need to click on the "Deploy to Azure" button.
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/?WT.mc_id=urlshortener-github-frbouche#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FFBoucher%2FAzUrlShortener%2Fmain%2Fsrc%2FadminTools%2FadminBlazorWebsite%2Fdeployment%2FadminBlazorWebsite-deployAzure.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/?WT.mc_id=urlshortener-github-frbouche#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FNNation%2FAzUrlShortener%2Fmain%2Fsrc%2FadminTools%2FadminBlazorWebsite%2Fdeployment%2FadminBlazorWebsite-deployAzure.json)
 
 > **Note**: this is now done automatically during the Azure deployment.
 >
