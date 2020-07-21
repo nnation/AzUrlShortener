@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "baseName": {
-            "defaultValue": "ShortenerTools",
+            "defaultValue": "MCSystemsCertify",
             "type": "string",
             "metadata": {
                 "description": "Name use as base-template to named the resources to be deployed in Azure."
@@ -72,12 +72,12 @@
     },
     "variables":{
         "suffix": "[substring(toLower(uniqueString(resourceGroup().id, resourceGroup().location)),0,5)]",
-        "funcAppName": "[toLower(concat(parameters('baseName'), variables('suffix')))]",
-        "funcStorageAccountName": "[tolower(concat(substring(parameters('baseName'), 0, min(length(parameters('baseName')),16)), variables('suffix'), 'stg'))]",
-        "funcHhostingPlanName": "[concat(substring(parameters('baseName'), 0, min(length(parameters('baseName')),14)), variables('suffix'), 'plan')]",
+        "funcAppName": "[toLower(parameters('baseName'))]",
+        "funcStorageAccountName": "[tolower(concat(substring(parameters('baseName'), 0, min(length(parameters('baseName')),16)), variables('suffix'), '-stg'))]",
+        "funcHhostingPlanName": "[concat(substring(parameters('baseName'), 0, min(length(parameters('baseName')),14)), variables('suffix'), '-plan')]",
         "insightsAppName":"[concat(substring(parameters('baseName'), 0, min(length(parameters('baseName')),14)), variables('suffix'), '-meta')]",
         "functionProjectFolder": "src/shortenerTools",
-        "UrlsStorageAccountName": "[concat('urldata', variables('suffix'), 'stg')]",
+        "UrlsStorageAccountName": "[concat('urldata', variables('suffix'), '-stg')]",
         "frontendInfo": {
             "adminBlazorWebsite": { 
                 "armTemplateUrl": "[concat('https://raw.githubusercontent.com/FBoucher/AzUrlShortener/', parameters('GitHubBranch'), '/src/adminTools/adminBlazorWebsite/deployment/adminBlazorWebsite-deployAzure.json')]"
